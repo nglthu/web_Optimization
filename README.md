@@ -7,6 +7,7 @@ img/compressedImages/2048.png
 					can_be_like.jpg
 					mobilewebdev.jpg
 					profilepic.jpg
+2. Remove Google font
 
 2. Eliminate render-blocking JavaScript and CSS in the-fold content
 3. Optimization Frame per second in pizza.html
