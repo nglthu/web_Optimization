@@ -9,8 +9,9 @@ img/compressedImages/2048.png
 					profilepic.jpg
 2. Remove Google font
 
-2. Eliminate render-blocking JavaScript and CSS in the-fold content
-3. Optimization Frame per second in pizza.html
+3. Eliminate render-blocking JavaScript and CSS in the-fold content
+	try to use inline style and asyn JS. 
+4. Optimization Frame per second in pizza.html
 	Modify views/js/main.js
 	until frames per second rate is 60fps of higher. 
 ## Website Performance Optimization portfolio project
