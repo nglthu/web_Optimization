@@ -1,3 +1,17 @@
+
+## Website Optimization Step By Step
+1. Optimisation all images into tiny png: 
+images/compressedImages/pizza.png
+						pizzeria.png
+img/compressedImages/2048.png
+					can_be_like.jpg
+					mobilewebdev.jpg
+					profilepic.jpg
+
+2. Eliminate render-blocking JavaScript and CSS in the-fold content
+3. Optimization Frame per second in pizza.html
+	Modify views/js/main.js
+	until frames per second rate is 60fps of higher. 
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
