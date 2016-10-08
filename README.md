@@ -11,6 +11,8 @@ img/compressedImages/2048.png
 
 3. Eliminate render-blocking JavaScript and CSS in the-fold content
 	try to use inline style and asyn JS. 
+	but shoud not enclose too long inline style texts
+	use inline style for web font of Open Sans
 4. Optimization Frame per second in pizza.html
 	Modify views/js/main.js
 	until frames per second rate is 60fps of higher. 
