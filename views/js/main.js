@@ -19,15 +19,17 @@ cameron *at* udacity *dot* com
 * Measure Critical Rendering Path with
 *Nagivation Timing
 */
-function logCRP(){
-	var time = window.performance.timing;
-	var dcl = time.domContentLoadedEventStart - time.domLoading;
-	var complete = time.domComplete- time.domLoading;
-	var stats = document.getElementById("crp-stats");
-	stats.textContent = "DCL:"+dcl+"ms, onload: "+complete;
+
+function logCRP() {
+  var t = window.performance.timing,
+    dcl = t.domContentLoadedEventStart - t.domLoading,
+    complete = t.domComplete - t.domLoading;
+  var stats = document.getElementById("crp-stats");
+  stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
 }
-window.addEventListener("load", function(event){
-	logCRP();
+
+window.addEventListener("load", function(event) {
+  logCRP();
 });
 // As you may have realized, this website randomly generates pizzas.
 // Here are arrays of all possible pizza ingredients.
@@ -540,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < 200; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
-    elem.src = "images/pizza.png";
+    elem.src = "images/compressedImages/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
