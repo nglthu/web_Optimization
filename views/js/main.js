@@ -464,10 +464,10 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    for (var i = 0; i < document.getElementsByClassName(".randomPizzaContainer").length; i++) {
+      var dx = determineDx(document.getElementsByClassName(".randomPizzaContainer")[i], size);
+      var newwidth = (document.getElementsByClassName(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+      document.getElementsByClassName(".randomPizzaContainer")[i].style.width = newwidth;
     }
   }
 
@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var pizzaCount = rows * cols;
   //Changed querySelector call to getElementById, saved this DOM call to local variable, movingPizzas, outside of the for loop.
   var movingPizzas = document.getElementById("movingPizzas1");
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < pizzaCount; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/compressedImages/pizza.png";
