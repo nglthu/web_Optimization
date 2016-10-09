@@ -1,21 +1,26 @@
 
 ## Website Optimization Step By Step
-1. Optimisation all images into tiny png: 
-images/compressedImages/pizza.png
-						pizzeria.png
-img/compressedImages/2048.png
-					can_be_like.jpg
-					mobilewebdev.jpg
-					profilepic.jpg
-2. Remove Google font
 
-3. Eliminate render-blocking JavaScript and CSS in the-fold content
+#Avoid landing page redirects
+Page has no redirects. 
+#CSS is minified
+#HTML is minified
+#Optimize images 
+Optimisation all images using tiny png: 
+images/pizza.png
+	   pizzeria.png
+img/2048.png
+	can_be_like.jpg
+	mobilewebdev.jpg
+	profilepic.jpg
+#JS is minified
+Eliminate render-blocking JavaScript and CSS in the-fold content
 	try to use inline style and asyn JS. 
 	but shoud not enclose too long inline style texts
 	use inline style for web font of Open Sans
-4. Optimization Frame per second in pizza.html
-	Modify views/js/main.js
-	until frames per second rate is 60fps of higher. 
+#Optimization Frame per second in pizza.html
+	Modify views/js/main.js until frames per second rate is 60fps of higher.
+	set number of pizza mover is changed with height of screen displayed
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
