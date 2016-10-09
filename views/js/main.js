@@ -539,10 +539,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
   //Changed the number of pizzas generated to be based on the window height.
   var rows = Math.round(window.screen.height / s);
-  var pizzaCount = rows * cols;
+  var pizzaDisplay = rows * cols;
   //Changed querySelector call to getElementById, saved this DOM call to local variable, movingPizzas, outside of the for loop.
   var movingPizzas = document.getElementById("movingPizzas1");
-  for (var i = 0; i < pizzaCount; i++) {
+  for (var i = 0; i < pizzaDisplay; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
