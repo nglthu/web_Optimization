@@ -15,7 +15,20 @@ Creator:
 Cameron Pittman, Udacity Course Developer
 cameron *at* udacity *dot* com
 */
-
+/*
+* Measure Critical Rendering Path with
+*Nagivation Timing
+*/
+function logCRP(){
+	var time = window.performance.timing;
+	var dcl = time.domContentLoadedEventStart - time.domLoading;
+	var complete = time.domComplete- time.domLoading;
+	var stats = document.getElementById("crp-stats");
+	stats.textContent = "DCL:"+dcl+"ms, onload: "+complete;
+}
+window.addEventListener("load", function(event){
+	logCRP();
+});
 // As you may have realized, this website randomly generates pizzas.
 // Here are arrays of all possible pizza ingredients.
 var pizzaIngredients = {};
@@ -376,15 +389,15 @@ var pizzaElementGenerator = function(i) {
   pizzaContainer.style.width = "33.33%";
   pizzaContainer.style.height = "325px";
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
-  pizzaImageContainer.style.width="35%";
+  pizzaImageContainer.classList.add=("col-md-6");
 
-  pizzaImage.src = "images/pizza.png";
+  pizzaImage.src = "images/compressedImages/pizza.png";
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
 
 
-  pizzaDescriptionContainer.style.width="65%";
+  pizzaDescriptionContainer.classList.add=("col-md-6");
 
   pizzaName = document.createElement("h4");
   pizzaName.innerHTML = randomName();
