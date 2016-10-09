@@ -8,18 +8,10 @@
 	<meta name="author" content=" FILL ME IN ">
 	<title>Cameron Pittman: Portfolio</title>
 	<!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-	<!--link href="//fonts.googleapis.com/css?family=Open+Sans:400,700"-->rel="stylesheet">
+	<!--link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
 	<!--<link  href="css/style.css" rel="stylesheet">-->
 	<!--Try to use inline style-->
 	<style>
-		@font-face {
-			font-family: 'Open Sans';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/K88pR3goAWT7BTt32Z01m5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
-			unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-		}
-		
 		@ media print {
 			* {
 				background: transparent!important;
@@ -213,6 +205,22 @@
 		// Optional TODO: replace with your Google Analytics profile ID.
 		ga('create', 'UA-XXXX-Y');
 		ga('send', 'pageview');
+	</script>
+	<script>
+		//Google font to load Open Sans
+		WebFontConfig = {
+			google: {
+				families: ['Open+Sans:400,700:latin']
+			}
+		};
+		(function () {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
 	</script>
 	<script src="http://www.google-analytics.com/analytics.js" async></script>
 	<script async src="js/perfmatters.js" max-age=86400></script>
