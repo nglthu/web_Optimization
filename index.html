@@ -33,8 +33,24 @@
 		window.addEventListener("load", function (event) {
 			logCRP();
 		});
-	</script>
+	
 	<!-- Inlined all CSS to reduce render blocking -->
+
+		(function (w, g) {
+			w['GoogleAnalyticsObject'] = g;
+			w[g] = w[g] || function () {
+				(w[g].q = w[g].q || []).push(arguments)
+			};
+			w[g].l = 1 * new Date();
+		})(window, 'ga');
+		// TODO: replace with your Google Analytics profile ID.
+		ga('create', 'UA-XXXX-Y');
+		ga('send', 'pageview');
+	</script>
+	
+	<script async src="http://www.google-analytics.com/analytics.js" max-age=86400></script>
+	<!-- Minified perfmatters.js and loaded inline -->
+	<!--<script async src="js/perfmatters.js"></script>-->
 	<style>
 		html {
 			font-size: 100%;
@@ -218,22 +234,6 @@
 			}
 		}
 	</style>
-	<script>
-		(function (w, g) {
-			w['GoogleAnalyticsObject'] = g;
-			w[g] = w[g] || function () {
-				(w[g].q = w[g].q || []).push(arguments)
-			};
-			w[g].l = 1 * new Date();
-		})(window, 'ga');
-		// TODO: replace with your Google Analytics profile ID.
-		ga('create', 'UA-XXXX-Y');
-		ga('send', 'pageview');
-	</script>
-	
-	<script async src="http://www.google-analytics.com/analytics.js"></script>
-	<!-- Minified perfmatters.js and loaded inline -->
-	<!--<script async src="js/perfmatters.js"></script>-->
 </head>
 
 <body>
