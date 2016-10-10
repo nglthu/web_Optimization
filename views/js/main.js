@@ -511,14 +511,16 @@ function updatePositions() {
 
   //Changed to select the moving pizzas element by class name than using querySelectorAll 
   var items = document.getElementsByClassName('mover');
+  var scrollTop = document.body.scrollTop / 1250;	
   //Moved the phase calculation into its own for loop that appends each phase to an array, rather than declaring and setting the phase variable each time.   j%5 five number	
   phase = [];
+  	
   for (var j = 0; j < 5; j++){
-    phase.push(Math.sin((document.body.scrollTop / 1250) + (j % 5)));
+    phase.push(Math.sin(scrollTop + (j % 5)));
   }
   //The pizza item styles are changed by using the phase array.
   for (var i = 0; i < items.length; i++) {
-    items[i].style.left = items[i].basicLeft + 100 * phase[i] + 'px';
+    items[i].style.left = items[i].basicLeft + 100 * phase[(i%5)] + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
