@@ -1,17 +1,17 @@
 
 ## Website Optimization Step By Step
-
-#Avoid landing page redirects
+###Online web: https://nglthu.github.io/web_Optimization/views/pizza.html
+###Avoid landing page redirects
 Page has no redirects. 
-#CSS is minified
-#HTML is minified
-#Optimize images 
+###CSS is minified
+###HTML is minified
+###Optimize images 
 Optimisation all images using tiny png: 
-#JS is minified
+###JS is minified
 Eliminate render-blocking JavaScript and CSS in the-fold content
 	try to use inline style and asyn JS. 
 	use script for web font of Open Sans
-#Optimization Frame per second in pizza.html
+###Optimization Frame per second in pizza.html
 	Modify views/js/main.js until frames per second rate is 60fps of higher.
 	set number of pizza mover is changed with height of screen 
 	
@@ -19,7 +19,7 @@ Eliminate render-blocking JavaScript and CSS in the-fold content
 	+Access DOM by getElementsByClassName than querySelectorAll
 	+Moved the phase calculation into its own for loop that appends each phase to an array, rather than declaring and setting the phase variable each time.  Using push method to add phase into array. 
 	Recording test:
-	https://github.com/nglthu/web_Optimization/blob/master/imagesSolution/webOptimisation.png
+	https://nglthu.github.io/web_Optimization/imagesSolution/webOptimisation.png
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
