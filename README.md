@@ -1,17 +1,17 @@
 
-## Website Optimization Step By Step
-###Online web: https://nglthu.github.io/web_Optimization/views/pizza.html
-###Avoid landing page redirects
+##  Website Optimization Step By Step
+### Online web: https://nglthu.github.io/web_Optimization/views/pizza.html
+### Avoid landing page redirects
 Page has no redirects. 
-###CSS is minified
-###HTML is minified
-###Optimize images 
+### CSS is minified
+### HTML is minified
+### Optimize images 
 Optimisation all images using tiny png: 
-###JS is minified
+### JS is minified
 Eliminate render-blocking JavaScript and CSS in the-fold content
 	try to use inline style and asyn JS. 
 	use script for web font of Open Sans
-###Optimization Frame per second in pizza.html
+### Optimization Frame per second in pizza.html
 	Modify views/js/main.js until frames per second rate is 60fps of higher.
 	set number of pizza mover is changed with height of screen 
 	
@@ -28,7 +28,7 @@ To get started, check out the repository and inspect the code.
 
 ### Getting started
 
-####Part 1: Optimize PageSpeed Insights score for index.html
+#### Part 1: Optimize PageSpeed Insights score for index.html
 
 Some useful tips to help you get started:
 
@@ -52,7 +52,7 @@ Some useful tips to help you get started:
 
 Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
-####Part 2: Optimize Frames per Second in pizza.html
+#### Part 2: Optimize Frames per Second in pizza.html
 
 To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
 
