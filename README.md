@@ -1,3 +1,17 @@
+[![licence badge]][licence]
+[![stars badge]][stars]
+[![forks badge]][forks]
+[![issues badge]][issues]
+
+[licence badge]:https://img.shields.io/badge/license-MIT-blue.svg
+[stars badge]:https://img.shields.io/github/stars/hey-red/Markdown.svg
+[forks badge]:https://img.shields.io/github/forks/hey-red/Markdown.svg
+[issues badge]:https://img.shields.io/github/issues/hey-red/Markdown.svg
+
+[licence]:https://github.com/nglthu/web_Optimization/blob/master/LICENSE.md
+[stars]:https://github.com/nglthu/web_Optimization/stargazers
+[forks]:https://github.com/nglthu/web_Optimization/network
+[issues]:https://github.com/nglthu/web_Optimization/issues
 
 ##  Website Optimization Step By Step
 ### Online web: https://nglthu.github.io/web_Optimization/views/pizza.html
