@@ -13,8 +13,12 @@
 [forks]:https://github.com/nglthu/web_Optimization/network
 [issues]:https://github.com/nglthu/web_Optimization/issues
 
+## Introduction
+
+Optimised an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.
+
 ##  Website Optimization Step By Step
-### Online web: https://nglthu.github.io/web_Optimization/views/pizza.html
+### Online web: [Link](https://nglthu.github.io/web_Optimization/views/pizza.html)
 ### Avoid landing page redirects
 Page has no redirects. 
 ### CSS is minified
